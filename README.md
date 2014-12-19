@@ -14,9 +14,13 @@ We are to read and write instances of this onject to mongo db. Now we have to de
 ```scala
 object BsonFormat {
   implicit val format = new BsonFormat[Simple] {
-	override def write(t: Simple): DBObject = MongoDBObject("p" -> t.payload)
+	override def write(t: Simple): DBObject = {
+	  MongoDBObject("p" -> t.payload)
+	}
 
-	override def read(o: Imports.DBObject): Simple = Simple(o.get("p").asInstanceOf[String])
+	override def read(o: Imports.DBObject): Simple = {
+	  Simple(o.get("p").asInstanceOf[String])
+	}
   }
 }
 ```
