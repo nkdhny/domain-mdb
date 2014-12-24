@@ -3,6 +3,20 @@
 Lightweight wrapper for [casbah](https://github.com/nkdhny/domain-mdb.git). It allows deal with domain objects in pretty same fashion as [spray-json](https://github.com/spray/spray-json) does.
 I.e. with `BsonFormat` provided one could seamesly read and write objects to mongodb.
 
+## Installation
+
+Add following dependency to your `build.sbt` (scala `2.10` only for now)
+
+```scala
+libraryDependencies += "com.github.nkdhny"  %%  "domain-mdb"    % "0.2-SNAPSHOT"
+```
+
+If required add sonatype snapshots to resolvers
+
+```scala
+resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
+```
+
 ## Basic Example
 
 Suppose we want to work  with simple object
