@@ -1,4 +1,4 @@
-package ru.nkdhny
+package com.github.nkdhny
 
 import com.mongodb.casbah.Imports._
 import com.mongodb.casbah.{MongoCollection, MongoCollectionBase}
@@ -7,7 +7,7 @@ import com.mongodb.{DBCollection, DBCursor}
 /**
  * Created by alexey on 10.07.14.
  */
-package object mdb {
+package object domain_mdb {
 
   case class ReadException (msg: String) extends Exception
   case class WriteException(msg: String) extends Exception

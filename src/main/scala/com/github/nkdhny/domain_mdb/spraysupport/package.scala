@@ -1,9 +1,9 @@
-package ru.nkdhny.mdb
+package com.github.nkdhny.domain_mdb
 
 import com.mongodb.casbah.Imports._
 import com.mongodb.casbah.commons.{MongoDBList, MongoDBObject}
 import spray.json._
-import ru.nkdhny.mdb._
+import com.github.nkdhny.domain_mdb._
 
 import scala.collection.mutable
 

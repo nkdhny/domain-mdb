@@ -1,9 +1,9 @@
-package ru.nkdhny.mdb
+package com.github.nkdhny.domain_mdb
 
 import com.mongodb.casbah.commons.MongoDBObject
 import com.mongodb.casbah.{Imports, MongoClient}
 import org.specs2.mutable._
-import ru.nkdhny.mdb._
+import com.github.nkdhny.domain_mdb._
 
 /**
  * Created by alexey on 19.12.14.

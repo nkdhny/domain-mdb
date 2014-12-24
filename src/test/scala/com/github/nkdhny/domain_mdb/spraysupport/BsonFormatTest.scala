@@ -1,9 +1,9 @@
-package ru.nkdhny.mdb.spraysupport
+package com.github.nkdhny.domain_mdb.spraysupport
 
 import com.mongodb.casbah.commons.{MongoDBList, MongoDBObject}
 import org.specs2.mutable._
 import spray.json._
-import ru.nkdhny.mdb._
+import com.github.nkdhny.domain_mdb._
 import spraysupport._
 
 /**
