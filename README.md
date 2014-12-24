@@ -29,7 +29,7 @@ Now we can work mongo without convertioning our object to `DBObject`
 
 ```scala
 import BsonFormat._
-import ru.nkdhny.mdb._ 
+import com.github.nkdhny.domain_mdb._ 
 
 val db = MongoClient()("test")
 val domainCollection = DomainMongoCollection[Simple](db("explicit_format"))
