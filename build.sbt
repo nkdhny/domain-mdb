@@ -1,15 +1,15 @@
 organization  := "com.github.nkdhny"
 
-version       := "0.2-SNAPSHOT"
+version       := "0.3-SNAPSHOT"
 
-scalaVersion  := "2.10.3"
+scalaVersion  := "2.10.4"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
 libraryDependencies ++= {
   Seq(
-    "io.spray"            %%  "spray-json"    % "1.2.6",
-    "org.mongodb"         %%  "casbah" 	      % "2.7.2",
+    "io.spray"            %%  "spray-json"    % "1.3.1",
+    "org.mongodb"         %%  "casbah" 	      % "2.8.0",
     "org.specs2"          %%  "specs2"        % "2.2.3" % "test",    
     "org.mockito"         %   "mockito-all"   % "1.9.5" % "test"
   )

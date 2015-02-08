@@ -49,7 +49,7 @@ package object spraysupport {
   }
 
   private def valueOf(a: Any): JsValue = a match {
-    case list: BasicDBList            => JsArray(list map valueOf toList)
+    case list: BasicDBList            => JsArray(list map valueOf toList: _*)
     case obj: DBObject                => fromDBObject(obj)
 
     case id: ObjectId                 => JsString(id.toString)
@@ -69,7 +69,7 @@ package object spraysupport {
   }
 
   private def fromDBObject(o: DBObject): JsValue = o match {
-    case list: BasicDBList => JsArray(list map valueOf toList)
+    case list: BasicDBList => JsArray(list map valueOf toList : _*)
     case obj: DBObject     =>
       val builder = mutable.ListBuffer[(String, JsValue)]()
       for {
@@ -77,7 +77,7 @@ package object spraysupport {
       } {
         builder += (fieldName -> valueOf(fieldValue))
       }
-      JsObject(builder.result())
+      JsObject(builder toMap)
 
     case _ => throw new IllegalStateException("Object expected")
 
