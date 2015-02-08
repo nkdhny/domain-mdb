@@ -14,7 +14,7 @@ Dependencies updated, `scala` to `2.10.4`, `spray-json` to `1.3.1` and `casbah` 
 Add following dependency to your `build.sbt` (scala `2.10` only for now)
 
 ```scala
-libraryDependencies += "com.github.nkdhny"  %%  "domain-mdb"    % "0.2-SNAPSHOT"
+libraryDependencies += "com.github.nkdhny"  %%  "domain-mdb"    % "0.3-SNAPSHOT"
 ```
 
 If required add sonatype snapshots to resolvers
