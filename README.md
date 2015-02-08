@@ -58,8 +58,10 @@ domainCollection.drop()
 domainCollection.insert(Simple("first"))
 domainCollection.insert(Simple("rest"))
 
+//List[Simple]
 val all = domainCollection.find().toList
 
+//Simple
 val one = domainCollection.find(MongoDBObject("p"->"first")).one()
 ```
 
